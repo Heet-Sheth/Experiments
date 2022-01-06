@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Flexbox</title>
+    <style type="text/css">
+      body {
+        background-color: dodgerblue;
+      }
+			.outer
+			{
+				flex-wrap: wrap;
+				display: flex;
+			}
+      .container {
+				flex: 25%;
+				max-width: 25%;
+      }
+			@media (max-width:1000px) {
+				.container{
+					flex: 50%;
+					max-width: 50%;
+				}				
+			}
+			@media (max-width:500px) 
+				{
+					.container{
+						flex: 100%;
+						max-width: 100%;
+					}
+				}
+      .container > img {
+				padding: 10px;
+				margin: 4px;
+				width: 100%;
+      }
+			image{
+				width: 100%;
+			}
+    </style>
+  </head>
+  <body>
+	<div class="outer">
+    <div class="container">
+			<img src="https://www.w3schools.com/w3images/wedding.jpg">
+			<img src="https://www.w3schools.com/w3images/rocks.jpg">
+			<img src="https://www.w3schools.com/w3images/falls2.jpg">
+		</div>
+		<div class="container">
+			<img src="https://www.w3schools.com/w3images/paris.jpg">
+			<img src="https://www.w3schools.com/w3images/nature.jpg">
+			<img src="https://www.w3schools.com/w3images/mist.jpg">
+		</div>
+		<div class="container">
+			<img src="https://www.w3schools.com/w3images/underwater.jpg">
+			<img src="https://www.w3schools.com/w3images/ocean.jpg">
+			<img src="https://www.w3schools.com/w3images/mountainskies.jpg">
+    </div>
+	</div>
+  </body>
+</html>
