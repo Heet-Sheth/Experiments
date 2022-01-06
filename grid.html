@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Grid Experiments</title>
+        <style type="text/css">
+            body
+            {
+                background-color: dodgerblue;
+            }
+            .container
+            {
+                display: grid;
+                grid-template-rows:auto;
+                justify-content: space-around;
+                align-content: center;
+                height: 100%;
+                gap: 10px;
+            }
+            .item
+            {
+                min-width: 70px;
+                font-size: 3em;
+                padding: 15px;
+                background-color: whitesmoke;
+                text-align: center;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+            .item:hover
+            {
+                opacity: 0.8;
+            }
+            .item:nth-child(1)
+            {
+                grid-column: 1/7;
+            }
+            .item:nth-child(2)
+            {
+                grid-row: 2/4;
+            }
+            .item:nth-child(3)
+            {
+                grid-column: 2/5;
+            }
+            .item:nth-child(4)
+            {
+                grid-column: 5/7;
+            }
+            .item:nth-child(5)
+            {
+                grid-column: 2/7;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">1</div>
+            <div class="item">1</div>
+            <div class="item">1</div>
+            <div class="item">1</div>
+        </div>
+    </body>
+</html>
