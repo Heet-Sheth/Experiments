@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>JS Closure</title>
+	</head>
+	<body>
+		<script>
+			var a=10,b=20;
+			function func() {
+				var a=5;
+				let b=91;
+				document.write(this.a+' and '+a+'<br>');
+				document.write(this.b+' and '+b);
+			}
+			func();
+		</script>
+	</body>
+</html>
