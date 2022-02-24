@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Pop from "./popup/popup.js";
 import "./index.css";
-function HomePage() {
+export default function HomePage() {
   const [pop, showPop] = useState(false);
   const togglePop = () => {
     showPop(!pop);
@@ -33,5 +33,3 @@ function HomePage() {
     </div>
   );
 }
-
-export default HomePage;
