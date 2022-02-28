@@ -8,7 +8,7 @@ const UpdatedComponent = (OriginalComponent) => {
     };
     return (
       <OriginalComponent
-        name="DarkPro"
+        title="Counter"
         count={count}
         incrementCount={incrementCount}
       />

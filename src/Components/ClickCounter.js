@@ -2,10 +2,10 @@ import React from "react";
 import updatedComponent from "./index.js";
 import "./ClickCounter.css";
 function ClickCounter(props) {
-  const { name, count, incrementCount } = props;
+  const { title, count, incrementCount } = props;
   return (
     <div className="Container">
-      <h1>{name}</h1>
+      <h1>{title}</h1>
       <input type="text" value={count} disabled />
       <div className="innerContainer">
         <button title="Decrement" onClick={() => incrementCount(-1)}>
