@@ -7,11 +7,14 @@ const UpdatedComponent = (OriginalComponent) => {
       setCount(abc === 0 ? 0 : count + abc);
     };
     return (
-      <OriginalComponent
-        title="Counter"
-        count={count}
-        incrementCount={incrementCount}
-      />
+      <div>
+        <OriginalComponent
+          title="Counter"
+          count={count}
+          incrementCount={incrementCount}
+          name={props.name}
+        />
+      </div>
     );
   }
 
