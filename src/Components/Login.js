@@ -6,7 +6,9 @@ function Login() {
   return (
     <div>
       <input type="text" onChange={(e) => setUsername(e.target.value)} />
+      <br />
       <input type="password" onChange={(e) => setPassword(e.target.value)} />
+      <br />
       <button onClick={() => setShow(true)}>Login</button>
     </div>
   );
